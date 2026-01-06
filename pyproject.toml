@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ohmyfin"
+version = "1.0.0"
+description = "Official Python SDK for Ohmyfin API - SWIFT transaction tracking, validation, and SSI data (previously known as TrackMySwift)"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.7"
+authors = [
+    {name = "Ohmyfin", email = "support@ohmyfin.ai"}
+]
+keywords = [
+    "ohmyfin",
+    "swift",
+    "swift-code",
+    "bic",
+    "iban",
+    "banking",
+    "transaction",
+    "tracking",
+    "correspondent-banking",
+    "ssi",
+    "payment-validation",
+    "trackmyswift"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+dependencies = [
+    "requests>=2.25.0"
+]
+
+[project.urls]
+Homepage = "https://ohmyfin.ai"
+Documentation = "https://ohmyfin.ai/api-documentation"
+Repository = "https://github.com/ohmyfin/ohmyfin-python"
+Issues = "https://github.com/ohmyfin/ohmyfin-python/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
